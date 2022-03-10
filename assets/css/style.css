@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 #scarelyu-logo {
-  width: 200px;
+  width: 100px;
 }
 html,
 body {
@@ -84,9 +84,14 @@ body {
   align-items: center;
 }
 .welcome {
-  font-size: 7rem;
+  font-size: 4rem;
   color: red;
   font-family: "horror";
+}
+.welcome-pic {
+  height: 200px;
+  display: flex;
+  align-items: center;
 }
 #stories,
 #places {
@@ -108,24 +113,24 @@ body {
   /* align-items: center; */
 }
 .stories-toggler {
-    height: 10%;
+  height: 10%;
 }
 
-.stories-toggler button{
-    background: red;
-    color:white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    width: 200px;
-    font-family: 'horror';
+.stories-toggler button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  width: 200px;
+  font-family: "horror";
 }
 
-.stories-toggler button.previous{
-    float:left;
+.stories-toggler button.previous {
+  float: left;
 }
-.stories-toggler button.next{
-    float:right;
+.stories-toggler button.next {
+  float: right;
 }
 .story-image img {
   width: 600px;
@@ -195,17 +200,22 @@ body {
   font-size: 30px;
 }
 @keyframes zoomInAnimationofKwa {
-    0% {
-        transform: scale(1,1);
-    }
-    50% {
-        transform: scale(1.2,1.2);
-    }
-    100% {
-        transform: scale(1,1);
-    }
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
+.icons {
+  width: 40px;
+  margin-top: 10px;
+  padding-right: 20px;
+}
 .welcome {
-	animation: zoomInAnimationofKwa 15s forwards;
+  animation: zoomInAnimationofKwa 15s forwards;
 }
