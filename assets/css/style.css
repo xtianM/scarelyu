@@ -1,155 +1,172 @@
 @font-face {
-    font-family: 'horror';
-    src: url('../fonts/BloodLust.ttf');
+  font-family: "horror";
+  src: url("../fonts/BloodLust.ttf");
 }
 @font-face {
-    font-family: 'meltedMonster';
-    src: url('../fonts/Melted Monster.ttf');
+  font-family: "meltedMonster";
+  src: url("../fonts/Melted Monster.ttf");
 }
 * {
-    scroll-behavior: smooth !important;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  scroll-behavior: smooth !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body {
-    background: rgb(33,33,33);
-    background: radial-gradient(circle, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 11%, rgba(0,0,0,1) 89%, rgba(5,5,5,1) 100%);
-    font-family: Arial,Helvetica,sans-serif;
-    color: white;
-    height: 100%;
-    width: 100%;
+#scarelyu-logo {
+  width: 200px;
+}
+html,
+body {
+  background: rgb(33, 33, 33);
+  background: radial-gradient(
+    circle,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(0, 0, 0, 1) 89%,
+    rgba(5, 5, 5, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  height: 100%;
+  width: 100%;
 }
 header {
-    position: fixed;
-    width: 100%;
-    background: black;
-    z-index: 9999;
+  position: fixed;
+  width: 100%;
+  background: black;
+  z-index: 9999;
 }
 .top {
-    width: 100%;
-    height: 100px;
-    color: white;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50%;
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50%;
 }
 .top ul {
-    list-style: none;
-    display: inline-flex;
-    gap: 20px;
-    /* float: right; */
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+  /* float: right; */
 }
 .top ul li {
-    /* float: left; */
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'meltedMonster';
+  /* float: left; */
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "meltedMonster";
 }
 .top ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-html, body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5em;
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5em;
 }
-.active a{
-    /* color: rgb(208, 195, 15); */
-    color: #ff8181!important;
+.active a {
+  /* color: rgb(208, 195, 15); */
+  color: #ff8181 !important;
 }
 #dashboard {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 .db-bg {
-    background: url(../images/bg.jpg) no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  background: url(../images/bg.jpg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcome {
-    font-size: 7rem;
-    color: red;
-    font-family: 'horror';
+  font-size: 7rem;
+  color: red;
+  font-family: "horror";
 }
-#stories, #places{
-    height: 100%;
-    padding: 122px 100px 0px 100px;
-}
+#stories,
 #places {
-    padding-bottom: 100px;
+  height: 100%;
+  padding: 122px 100px 0px 100px;
+}
+
+#places {
+  padding-bottom: 100px;
 }
 #contact-us {
-    padding: 30px;
+  padding: 30px;
 }
 .stories-container {
-    display: inline-flex;
-    gap: 20px;
-    height: 100%;
-    padding-top: 100px;
-    /* align-items: center; */
+  display: inline-flex;
+  gap: 20px;
+  height: 100%;
+  padding-top: 100px;
+  /* align-items: center; */
 }
 .story-image img {
-    width: 600px;
+  width: 600px;
 }
 .story-content {
-    overflow: hidden;
+  overflow: hidden;
 }
 .story-content .content {
-    max-height: 380px;
-    overflow: hidden;
+  max-height: 380px;
+  overflow: hidden;
 }
 .story-content h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .show-more button {
-    padding: 6px;
-    background: red;
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+  padding: 6px;
+  background: red;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 .h-100 {
-    max-height: 80%!important;
-    overflow: auto!important;
+  max-height: 80% !important;
+  overflow: auto !important;
 }
-.stories-lbl, .places-lbl {
-    font-size: 3.5rem;
-    color: red;
-    font-family: 'meltedMonster';
+.stories-lbl,
+.places-lbl {
+  font-size: 3.5rem;
+  color: red;
+  font-family: "meltedMonster";
 }
 .places-lbl {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 #contact-us {
-    height: 200px;
-    background: #2f2e2e;
-    margin-top: 100px;
+  height: 200px;
+  background: #2f2e2e;
+  margin-top: 100px;
 }
 .footer .contact {
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 .copyright {
-    text-align: center;
-    margin-top: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
 .mt-10 {
-    margin-top: 10px;
+  margin-top: 10px;
+}
+#complogo {
+  width: 150px;
 }
 .logo {
-    color: red;
-    font-family: 'meltedMonster';
+  color: red;
+  font-family: "meltedMonster";
 }
 .logo span {
-    font-size: 30px;
+  font-size: 30px;
 }
