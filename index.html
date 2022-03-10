@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div id="katawa">
         <embed
           src="/assets/music/sound1.mp3"
           autostart="true"
@@ -43,6 +43,11 @@
             >
           </li>
           <li>
+            <a onclick="linkActive(event)" class="page-link" href="#faq-gg"
+              >FAQ</a
+            >
+          </li>
+          <li>
             <a onclick="linkActive(event)" class="page-link" href="#contact-us"
               >CONTACT US</a
             >
@@ -59,6 +64,15 @@
 
     <section id="stories">
       <h1 class="stories-lbl">Stories</h1>
+      
+      <div class="btn-event-options mt-10">
+        <a class="btn-location" href="#places">
+          Location
+        </a>
+        <a class="btn-hire-tour-guide" href="#contact-us">
+            Hire a Tour Guide
+        </a>
+      </div>
       <div class="stories-container">
         <div class="story-image">
           <img src="assets/images/sj1.jpg" alt="" />
@@ -148,6 +162,8 @@
               Show More
             </button>
           </div>
+          
+
         </div>
       </div>
       <div class="stories-container" style="display: none">
@@ -397,7 +413,7 @@
           hydration and applying sunblock.
         </p>
       </div>
-      <div class="faq">
+      <div class="faq" style="display:none">
         <h2>Q. How much should a taxi from the city cost?</h2>
         <p>
           <span>A. </span>A round-trip taxi from San Fernando City’ should cost

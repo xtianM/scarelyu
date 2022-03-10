@@ -103,9 +103,7 @@ body {
 #places {
   padding-bottom: 100px;
 }
-#contact-us {
-  padding: 30px;
-}
+
 .stories-container {
   display: inline-flex;
   gap: 20px;
@@ -129,9 +127,17 @@ body {
 
 .stories-toggler button.previous {
   float: left;
+  cursor: pointer;
 }
 .stories-toggler button.next {
   float: right;
+  cursor:pointer;
+}
+.stories-toggler button.previous:hover {
+  padding-left: 10px;
+}
+.stories-toggler button.next:hover {
+  padding-right: 10px;
 }
 .story-image img {
   width: 600px;
@@ -147,16 +153,26 @@ body {
 .story-content h1 {
   margin-bottom: 20px;
 }
+.show-more {
+  margin-top: 4px;
+  text-align: right;
+}
 .show-more button {
   padding: 6px;
-  background: red;
   color: white;
   border: none;
   outline: none;
   border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid red;
+}
+.show-more button:hover {
+  border: 1px solid red;
+  background: red;
 }
 .h-100 {
-  max-height: 80% !important;
+  max-height: 77% !important;
   overflow: auto !important;
 }
 .stories-lbl,
@@ -174,7 +190,8 @@ body {
 }
 
 #contact-us {
-  height: 200px;
+  padding: 30px;
+  height: max-content;
   background: #2f2e2e;
   margin-top: 100px;
 }
@@ -224,4 +241,34 @@ body {
 }
 .welcome {
   animation: zoomInAnimationofKwa 15s forwards;
+}
+
+.btn-event-options a {
+  border: 1px solid red;
+  padding: 10px 20px 13px 20px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-event-options a:hover {
+  border: 1px solid #ff8181 !important;
+  background: red;
+}
+.btn-event-options {
+  /* margin-top: 24px; */
+  float: right;
+  margin: auto;
+}
+
+@keyframes fadeInAnimationofKwa {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.stories-container {
+  -webkit-animation: fadeInAnimationofKwa 1s;
+  animation: fadeInAnimationofKwa 1s;
+}
+#katawa {
+  display: none;
 }
