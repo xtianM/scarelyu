@@ -94,7 +94,8 @@ body {
   align-items: center;
 }
 #stories,
-#places {
+#places,
+#faq-gg {
   height: 100%;
   padding: 122px 100px 0px 100px;
 }
@@ -167,6 +168,11 @@ body {
 .places-lbl {
   margin-bottom: 50px;
 }
+.faq {
+  justify-content: center;
+  margin-top: 30px;
+}
+
 #contact-us {
   height: 200px;
   background: #2f2e2e;
