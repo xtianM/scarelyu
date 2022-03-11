@@ -131,7 +131,7 @@ body {
 }
 .stories-toggler button.next {
   float: right;
-  cursor:pointer;
+  cursor: pointer;
 }
 .stories-toggler button.previous:hover {
   padding-left: 10px;
@@ -176,7 +176,8 @@ body {
   overflow: auto !important;
 }
 .stories-lbl,
-.places-lbl {
+.places-lbl,
+.faq-lbl {
   font-size: 3.5rem;
   color: red;
   font-family: "meltedMonster";
@@ -262,8 +263,12 @@ body {
 }
 
 @keyframes fadeInAnimationofKwa {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .stories-container {
   -webkit-animation: fadeInAnimationofKwa 1s;
@@ -271,4 +276,128 @@ body {
 }
 #katawa {
   display: none;
+}
+
+@media (max-width: 950px) {
+  .top ul li {
+    font-size: 17px;
+  }
+  #scarelyu-logo {
+    width: 75px;
+  }
+  .welcome {
+    font-size: 2rem;
+  }
+  .welcome-pic {
+    height: 150px;
+    display: flex;
+    align-items: center;
+  }
+  .stories-lbl {
+    font-size: 2.5rem;
+  }
+
+  .btn-event-options a {
+    border: 1px solid red;
+    padding: 8px 15px 10px 15px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .story-image img {
+    width: 400px;
+  }
+  .story-content .content {
+    max-height: 350px;
+    overflow: hidden;
+  }
+  .story-content h1 {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+
+  .content p {
+    font-size: 10px;
+  }
+  .show-more {
+    margin-top: 2px;
+    text-align: right;
+  }
+  .show-more button {
+    padding: 4px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid red;
+  }
+
+  .stories-toggler button {
+    padding: 7px 15px;
+    font-size: 15px;
+    width: 150px;
+    font-family: "horror";
+  }
+  .places-lbl {
+    font-size: 2.5rem;
+  }
+
+  #faq-gg {
+    padding-bottom: 800px;
+  }
+
+  .faq-lbl {
+    font-size: 2.5rem;
+  }
+
+  .faq h2 {
+    font-size: 15px;
+  }
+  .faq p {
+    font-size: 10px;
+  }
+  #contact-us {
+    padding: 20px;
+    height: max-content;
+    background: #2f2e2e;
+    margin-top: 70px;
+  }
+  #contact-us h2 {
+    font-size: 15px;
+  }
+
+  #contact-us p {
+    font-size: 12px;
+  }
+  .footer .contact {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+  .mt-10 {
+    margin-top: 10px;
+  }
+  #complogo {
+    width: 150px;
+  }
+  .logo {
+    color: red;
+    font-family: "meltedMonster";
+  }
+  .logo span {
+    font-size: 30px;
+  }
 }
