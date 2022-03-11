@@ -97,7 +97,8 @@ body {
 #places,
 #faq-gg {
   height: 100%;
-  padding: 122px 100px 0px 100px;
+  padding: 122px 12% 0px 12%;
+  /* padding: 122px 100px 0px 100px!important; */
 }
 
 #places {
